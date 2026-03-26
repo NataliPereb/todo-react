@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ToDo } from "../assets/models/todo-item";
 import { Form } from "../components/Form/Form"
-import { Header } from "../components/Header/Header"
 import { ToDOList } from "../components/ToDoList/ToDOList"
 import { log } from "console";
 
@@ -34,7 +33,6 @@ export const ToDoListPage = () => {
 
     return (
         <>
-            <Header />
             <Form createNewToDo={createNewToDo} />
             <ToDOList
                 todos={todos}

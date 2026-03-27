@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ToDo } from "../assets/models/todo-item";
 import { Form } from "../components/Form/Form"
 import { ToDOList } from "../components/ToDoList/ToDOList"
-import { log } from "console";
 
 export const ToDoListPage = () => {
     const [todos, setTodos] = useState<ToDo[]>([]);
